@@ -1,0 +1,251 @@
+/*BEM Home*/
+
+.encabezado__estilo {
+    background-color: $color-negro;
+    border-bottom: solid 3px $color-oro;
+    position: sticky;
+    top: 0px;
+    z-index: 8;
+}
+
+.encabezado__barra {
+    align-items: flex-end;
+    margin-top: 40px;
+    justify-content: left;
+}
+
+.encabezado__logo {
+    width: 16%;
+    margin-left: 1.5rem;
+    animation-duration: 5s;
+	animation-name: aparecer;
+}
+
+.encabezado__efectoMenu {
+    &:hover {
+        background-color: $color-oro;
+    }
+}
+
+.principal__titulo {
+    display: flex;
+    align-self: center;
+    font: $fuente-titulo;
+    color: $color-oro;
+    text-shadow: $sombra-titulo;
+    max-width: 100%;
+    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.principal__carrousel {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.principal__imagenGrande {
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.principal__textos {
+    font: $fuente-textos;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center;
+}
+
+.principal__subtitulos {
+	color: $color-negro;
+	text-align: center;
+	font-family: 'Marcellus', serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px $color-negro;
+}
+
+.principal__estiloTarjeta {
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+
+/*BEM Nosotros*/
+
+main div.gifImagen img.principal__recorte {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -75%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.principal__listaNosotros {
+    display: flex;
+	color: $color-negro;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font: $fuente-textos;
+    justify-content: center;
+}
+
+.principal__aboutFoto{
+    width: 100%;
+    box-shadow: $sombra-cajas;
+    margin-top: 1rem;
+}
+
+.principal__titulosConFondo {
+    color: $color-oro;
+    padding: 5px 5px 5px 5px;
+    font: $fuente-titulo;
+    font-size: 30px;
+    background-color: $color-negro;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    align-self: center;
+}
+
+
+/*BEM Servicios*/
+
+.principal__contenidoSobre {
+    padding: 15px 15px;
+    color: $color-blanco;
+}
+
+.principal__imgBanner {
+    max-width : 32rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*BEM Destinos*/
+
+.bariloche__claseHoteles {
+    @extend %destinoTarjetas;
+    grid-area: prestacion1;
+    display: flex;
+}
+
+.bariloche__claseTours {
+    @extend %destinoTarjetas;
+    grid-area: prestacion2;
+    display: flex;
+}
+
+.bariloche__claseComida {
+    @extend %destinoTarjetas;
+    grid-area: prestacion3;
+    display: flex;
+}
+
+.destino__logos{
+    width: 70%;
+    margin-left: 1.1rem;
+}
+
+.destino__imagenSectionCiudad {
+	width: 70%;
+	margin-left: 1.8rem;
+}
+
+.destino__subtitulosDestinos {
+	color: $color-oro;
+	text-align: center;
+    font-family: 'Marcellus', serif;
+    margin-top: 0.5rem;
+}
+
+.destinos__galeriaFotos {
+    grid-area: fotogal;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	margin-top: 2rem;
+	margin-left: 0.8rem;
+	margin-right: 0.8rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.destinos__imagenesGalerias {
+	width: 20%;
+}
+
+.borde__tarjetas {
+    @include bordes (3px, 5px, ridge);
+}
+
+.borde__formulario {
+    @include bordes (5px, 8px, inset);
+}
+
+.borde__galeria {
+    @include bordes (0px, 6px, groove);
+}
+
+.borde__fotoGaleria {
+    @include bordes (2px, 3px, solid);
+}
+
+
+
+/*BEM Contactos*/
+
+.contacto__formFondo {
+    background-image: url(../imagenes/Floating_cards.png);
+    background-size: 70%;
+}
+
+.contacto__alineacion{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*BEM Footer*/
+
+.pie__estilo {
+    grid-area: footer;
+    background-color: $color-negro;
+    border-top: solid 3px $color-oro;
+    margin-top: 30px;
+}
+
+.pie__redes {
+    padding-top: 3px;
+    width: 3vw;
+    position: relative;
+    margin-right: 5vw;
+    padding-bottom: 1px;
+    margin-top: 5px;
+    transition: all 200ms;
+}
+
+.pie__primerLogo{
+    margin-left: 12vw;
+}
+
+.pie__gradFooter {
+	background-image: radial-gradient(ellipse, $color-negro , #000000);
+}
