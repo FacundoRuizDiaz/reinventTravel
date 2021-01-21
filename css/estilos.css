@@ -518,28 +518,6 @@ section#contacto {
   display: flex;
   justify-content: center; }
 
-/*BEM Footer*/
-.pie__estilo {
-  grid-area: footer;
-  background-color: #222222;
-  border-top: solid 3px #C5A561;
-  margin-top: 30px; }
-
-.pie__redes {
-  padding-top: 3px;
-  width: 3vw;
-  position: relative;
-  margin-right: 5vw;
-  padding-bottom: 1px;
-  margin-top: 5px;
-  transition: all 200ms; }
-
-.pie__primerLogo {
-  margin-left: 12vw; }
-
-.pie__gradFooter {
-  background-image: radial-gradient(ellipse, #222222, #000000); }
-
 /*SCSS*/
 /*Atributos Home*/
 @keyframes aparecer {
