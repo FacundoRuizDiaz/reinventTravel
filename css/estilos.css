@@ -11,14 +11,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 420px 420px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta1" "tarjeta2 tarjeta2"; }
-  main div.principal__gifImagen {
-    width: 100vw;
-    height: 50vh;
-    overflow: hidden;
-    position: relative;
-    justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -67,14 +59,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 230px 420px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
-  main div.principal__gifImagen {
-    width: 100vw;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -133,14 +117,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 230px 420px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
-  main div.principal__gifImagen {
-    width: 100vw;
-    height: 85vh;
-    overflow: hidden;
-    position: relative;
-    justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -191,14 +167,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 210px 420px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
-  main div.principal__gifImagen {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -260,14 +228,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 210px 420px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
-  main div.principal__gifImagen {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    justify-self: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -448,16 +408,6 @@ main section div table, main section div tr, main section div td {
   padding-right: 0.4rem; }
 
 /*BEM Nosotros*/
-main div.gifImagen img.principal__recorte {
-  position: absolute;
-  left: -100%;
-  right: -100%;
-  top: -100%;
-  bottom: -75%;
-  margin: auto;
-  min-height: 100%;
-  min-width: 100%; }
-
 .principal__listaNosotros {
   display: flex;
   color: #222222;
