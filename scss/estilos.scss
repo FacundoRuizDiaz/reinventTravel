@@ -125,29 +125,6 @@ form#miEstilo {
 }
 
 
-/*Atributos Tabla*/
-
-main {
-    section{
-        div{
-            table {
-                @extend %tablaDestino;
-                @include bordes (0px, 3px, double);
-                }
-                tr {
-                    @extend %tablaDestino;
-                    @include bordes (0px, 2px, solid);
-                    }
-                    td {
-                        @extend %tablaDestino;
-                        @include bordes (0px, 2px, solid);
-                    }
-                
-            
-        }
-    }
-}
-
 /*Animaciones*/
 
 #grad {
