@@ -18,5 +18,11 @@
     margin: 0.1rem;
 }
 
+%estiloBotones{
+    box-shadow: $sombra-cajas;
+    background-color: $color-negro;
+    border-color: $color-oroClaro;
+    color: $color-blanco;
+}
 
 

@@ -49,6 +49,10 @@ main {
     }
 }
 
+main section#paginaPrincipal div.card a.btn {
+    @extend %estiloBotones;
+}
+
 
 /*Atributos Nosotros*/
 
@@ -109,6 +113,10 @@ main section#grillaServicios div .circle-b:after {
     right: -70px;
 }
 
+main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button {
+    @extend %estiloBotones;
+}
+
 
 /*Atributos Form*/
 
@@ -124,6 +132,13 @@ form#miEstilo {
     padding-left: 0.2rem;
     background-color: $color-blanco;
 }
+
+/*Atributos Contacto*/
+
+main form#miEstilo div.col-12 button.btn {
+    @extend %estiloBotones;
+}
+
 
 
 /*Animaciones*/
