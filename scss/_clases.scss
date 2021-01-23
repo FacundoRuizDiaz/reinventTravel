@@ -14,13 +14,6 @@
     justify-content: left;
 }
 
-.encabezado__logo {
-    width: 16%;
-    margin-left: 1.5rem;
-    animation-duration: 5s;
-	animation-name: aparecer;
-}
-
 .encabezado__efectoMenu {
     &:hover {
         background-color: $color-oro;
@@ -55,16 +48,6 @@
     margin-top: 1rem;
 }
 
-.principal__textos {
-    font: $fuente-textos;
-    text-align: center;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    align-self: center;
-}
-
 .principal__subtitulos {
 	color: $color-negro;
 	text-align: center;
@@ -89,12 +72,6 @@
     margin-top: 30px;
     font: $fuente-textos;
     justify-content: center;
-}
-
-.principal__aboutFoto{
-    width: 100%;
-    box-shadow: $sombra-cajas;
-    margin-top: 1rem;
 }
 
 .principal__titulosConFondo {
@@ -150,11 +127,6 @@
     margin-left: 1.1rem;
 }
 
-.destino__imagenSectionCiudad {
-	width: 70%;
-	margin-left: 1.8rem;
-}
-
 .destino__subtitulosDestinos {
 	color: $color-oro;
 	text-align: center;
@@ -181,10 +153,6 @@
 	width: 20%;
 }
 
-.borde__tarjetas {
-    @include bordes (3px, 5px, ridge);
-}
-
 .borde__formulario {
     @include bordes (5px, 8px, inset);
 }
@@ -198,13 +166,7 @@
 }
 
 
-
 /*BEM Contactos*/
-
-.contacto__formFondo {
-    background-image: url(../imagenes/Floating_cards.png);
-    background-size: 70%;
-}
 
 .contacto__alineacion{
     display: flex;

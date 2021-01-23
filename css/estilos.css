@@ -4,14 +4,140 @@
   margin: 0;
   -webkit-box-sizing: border-box; }
 
+.bariloche__claseHoteles, .bariloche__claseTours, .bariloche__claseComida {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 0.8rem;
+  padding-right: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 0.4rem;
+  margin: 1rem 1rem 2rem 1rem; }
+
+main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button, main form#miEstilo div.col-12 button.btn {
+  box-shadow: 3px 3px 5px 0px #222222;
+  background-color: #222222;
+  border-color: #ebda6a;
+  color: #FFFFFF; }
+
+@media (max-width: 575px) {
+  main section#paginaPrincipal {
+    display: grid;
+    max-width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 420px 420px 420px;
+    grid-template-areas: "parrafo" "tarjeta1" "tarjeta2"; }
+  #aumentoTitulo {
+    display: flex;
+    font-size: 1.7rem;
+    text-align: center; }
+  .encabezado__logo {
+    width: 36%;
+    margin-left: 0.5rem;
+    animation-duration: 5s;
+    animation-name: aparecer; }
+  #estiloLista {
+    padding-right: 2rem;
+    padding-left: 3rem; }
+  .principal__aboutFoto {
+    width: 80%;
+    box-shadow: 3px 3px 5px 0px #222222;
+    display: block;
+    margin: auto; }
+  .principal__textos {
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-self: center; }
+  .principal__videoFondo {
+    background-image: url(../imagenes/textura.jpg);
+    background-size: cover;
+    width: 95vw;
+    height: 35vh;
+    display: block;
+    margin: auto; }
+  .principal__videoDetalle {
+    width: 92vw;
+    height: 33vh;
+    position: relative;
+    display: block;
+    margin: auto;
+    padding-top: 1rem; }
+  main section#grillaServicios {
+    display: grid;
+    max-width: 100vw;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 19rem 19rem 19rem 19rem 19rem;
+    grid-template-areas: "banner1"  "banner2" "banner3" "banner4" "banner5";
+    justify-content: center;
+    align-items: center; }
+  .principal__responsiveBanner {
+    margin: 1rem auto;
+    max-width: 80%;
+    position: relative;
+    height: auto;
+    min-height: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 5px 0px #222222;
+    background-image: linear-gradient(to bottom right, #ebda6a, #C5A561); }
+  form#miEstilo {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #FFFFFF; }
+  main section#grillaDestinos {
+    display: grid;
+    display: grid;
+    grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion1 prestacion1 prestacion1 prestacion2 prestacion2 prestacion2 prestacion3 prestacion3 prestacion3" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
+    grid-template-rows: 19rem 14rem 11rem 5rem 9rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center; }
+  .borde__tarjetas {
+    border-radius: 3px;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #C5A561;
+    margin: 0.2rem; } }
+
 @media (min-width: 576px) {
   main section#paginaPrincipal {
     display: grid;
     max-width: 100vw;
     min-height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 420px 420px;
+    grid-template-rows: 300px 430px 430px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta1" "tarjeta2 tarjeta2"; }
+  main section.container-fluid div.row .align-items-center {
+    height: 300px; }
+  .encabezado__logo {
+    width: 36%;
+    margin-left: 1.5rem;
+    animation-duration: 5s;
+    animation-name: aparecer; }
+  .principal__aboutFoto {
+    width: 100%;
+    box-shadow: 3px 3px 5px 0px #222222;
+    margin-top: 1rem; }
+  .principal__textos {
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -32,6 +158,9 @@
     grid-template-areas: "banner1"  "banner2" "banner3" "banner4" "banner5";
     justify-content: center;
     align-items: center; }
+  #aumentoTitulo {
+    font-size: 2.3rem;
+    text-align: center; }
   .principal__responsiveBanner {
     margin: 1rem auto;
     width: 50%;
@@ -50,7 +179,27 @@
     grid-template-rows: 14rem 11rem 11rem 5rem 10rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
-    align-content: center; } }
+    align-content: center; }
+  .borde__tarjetas {
+    border-radius: 3px;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #C5A561;
+    margin: 0.4rem; }
+  .contacto__formFondo {
+    background-image: url(../imagenes/Floating_cards.png);
+    background-size: 70%; }
+  form#miEstilo {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #FFFFFF; } }
 
 @media (min-width: 768px) {
   main section#paginaPrincipal {
@@ -58,8 +207,23 @@
     max-width: 100vw;
     min-height: 90vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 230px 420px;
+    grid-template-rows: 230px 430px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
+  .encabezado__logo {
+    width: 26%;
+    margin-left: 1.5rem;
+    animation-duration: 5s;
+    animation-name: aparecer; }
+  .principal__textos {
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center; }
+  main section.container-fluid div.row .align-items-center {
+    height: 400px; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -71,6 +235,10 @@
     position: relative;
     padding-top: 1.2rem;
     padding-left: 3rem; }
+  .principal__aboutFoto {
+    width: 100%;
+    box-shadow: 3px 3px 5px 0px #222222;
+    margin-top: 1rem; }
   main section#grillaServicios {
     display: grid;
     max-width: 100vw;
@@ -80,6 +248,9 @@
     grid-template-areas: "banner1 banner1" "banner2 banner2" "banner3 banner3" "banner4 banner4" "banner5 banner5";
     justify-content: center;
     align-items: center; }
+  #aumentoTitulo {
+    font-size: 3rem;
+    text-align: center; }
   .principal__responsiveBanner {
     margin: 1rem auto;
     width: 50%;
@@ -94,10 +265,33 @@
   main section#grillaDestinos {
     display: grid;
     grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion1 prestacion1 prestacion1 prestacion2 prestacion2 prestacion2 prestacion3 prestacion3 prestacion3" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
-    grid-template-rows: 12rem 24rem 8rem 5rem 13rem;
+    grid-template-rows: 12rem 24.5rem 8rem 5rem 13rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center; }
+  .destino__imagenSectionCiudad {
+    width: 70%;
+    margin-left: 2rem; }
+  .borde__tarjetas {
+    border-radius: 3px;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #C5A561;
+    margin: 0.4rem; }
+  .contacto__formFondo {
+    background-image: url(../imagenes/Floating_cards.png);
+    background-size: 70%; }
+  form#miEstilo {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #FFFFFF; }
   body footer.footer-bs .footer-nav, body footer.footer-bs .footer-social, body footer.footer-bs .footer-ns {
     border-left: solid 1px rgba(255, 255, 255, 0.1); }
   .footer-bs {
@@ -108,7 +302,12 @@
     border-top-left-radius: 0px;
     border-bottom-left-radius: 6px;
     border-top: solid 4px #C5A561;
-    font-family: 'Alegreya Sans', sans-serif; } }
+    font-family: 'Alegreya Sans', sans-serif; }
+  .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px; } }
 
 @media (min-width: 992px) {
   main section#paginaPrincipal {
@@ -116,8 +315,27 @@
     max-width: 100vw;
     min-height: 90vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 230px 420px;
+    grid-template-rows: 230px 450px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
+  .encabezado__logo {
+    width: 16%;
+    margin-left: 1.5rem;
+    animation-duration: 5s;
+    animation-name: aparecer; }
+  .principal__aboutFoto {
+    width: 100%;
+    box-shadow: 3px 3px 5px 0px #222222;
+    margin-top: 1rem; }
+  .principal__textos {
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center; }
+  main section.container-fluid div.row .align-items-center {
+    height: 500px; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -156,9 +374,34 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center; }
+  .destino__imagenSectionCiudad {
+    width: 70%;
+    margin-left: 2.7rem; }
+  .borde__tarjetas {
+    border-radius: 3px;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #C5A561;
+    margin: 0.8rem; }
   main section#grillaDestinos div.d-none img.imagenSectionCiudad {
     width: 70%;
-    margin-left: 2.7rem; } }
+    margin-left: 2.7rem; }
+  .contacto__formFondo {
+    background-image: url(../imagenes/Floating_cards.png);
+    background-size: 70%; }
+  form#miEstilo {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #FFFFFF; }
+  .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    padding: 10px 25px; } }
 
 @media (min-width: 1200px) {
   main section#paginaPrincipal {
@@ -166,8 +409,27 @@
     max-width: 100vw;
     min-height: 80vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 210px 420px;
+    grid-template-rows: 210px 450px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
+  .encabezado__logo {
+    width: 16%;
+    margin-left: 1.5rem;
+    animation-duration: 5s;
+    animation-name: aparecer; }
+  .principal__aboutFoto {
+    width: 100%;
+    box-shadow: 3px 3px 5px 0px #222222;
+    margin-top: 1rem; }
+  .principal__textos {
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center; }
+  main section.container-fluid div.row .align-items-center {
+    height: 600px; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -219,7 +481,32 @@
     align-content: center; }
   main section#grillaDestinos div.d-none img.imagenSectionCiudad {
     width: 70%;
-    margin-left: 3.1rem; } }
+    margin-left: 3.1rem; }
+  .destino__imagenSectionCiudad {
+    width: 70%;
+    margin-left: 3.4rem; }
+  .borde__tarjetas {
+    border-radius: 3px;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #C5A561;
+    margin: 0.8rem; }
+  .contacto__formFondo {
+    background-image: url(../imagenes/Floating_cards.png);
+    background-size: 70%; }
+  form#miEstilo {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #FFFFFF; }
+  .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    padding: 10px 25px; } }
 
 @media (min-width: 1400px) {
   main section#paginaPrincipal {
@@ -227,8 +514,23 @@
     max-width: 100vw;
     min-height: 80vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 210px 420px;
+    grid-template-rows: 210px 450px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2"; }
+  .encabezado__logo {
+    width: 16%;
+    margin-left: 1.5rem;
+    animation-duration: 5s;
+    animation-name: aparecer; }
+  .principal__textos {
+    font: normal 0.95rem "Alegreya Sans", sans-serif;
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center; }
+  main section.container-fluid div.row .align-items-center {
+    height: 600px; }
   .principal__videoFondo {
     background-image: url(../imagenes/textura.jpg);
     background-size: cover;
@@ -240,6 +542,10 @@
     position: relative;
     padding-top: 1.2rem;
     padding-left: 7rem; }
+  .principal__aboutFoto {
+    width: 90%;
+    box-shadow: 3px 3px 5px 0px #222222;
+    margin-top: 1rem; }
   main section#grillaServicios {
     display: grid;
     max-width: 100vw;
@@ -269,7 +575,32 @@
     align-content: center; }
   main section#grillaDestinos div.d-none img.imagenSectionCiudad {
     width: 70%;
-    margin-left: 3.1rem; } }
+    margin-left: 3.1rem; }
+  .destino__imagenSectionCiudad {
+    width: 70%;
+    margin-left: 4rem; }
+  .borde__tarjetas {
+    border-radius: 3px;
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #C5A561;
+    margin: 0.8rem; }
+  .contacto__formFondo {
+    background-image: url(../imagenes/Floating_cards.png);
+    background-size: 70%; }
+  form#miEstilo {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #FFFFFF; }
+  .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+    padding: 10px 25px; } }
 
 .parrafo {
   grid-area: parrafo; }
@@ -323,22 +654,6 @@ section#contacto {
   grid-area: contacto;
   justify-self: center; }
 
-.bariloche__claseHoteles, .bariloche__claseTours, .bariloche__claseComida {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 0.8rem;
-  padding-right: 0.4rem;
-  padding-bottom: 0.4rem;
-  padding-left: 0.4rem;
-  margin: 1rem 1rem 2rem 1rem; }
-
-main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button, main form#miEstilo div.col-12 button.btn {
-  box-shadow: 3px 3px 5px 0px #222222;
-  background-color: #222222;
-  border-color: #ebda6a;
-  color: #FFFFFF; }
-
 /*BEM Home*/
 .encabezado__estilo {
   background-color: #222222;
@@ -351,12 +666,6 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
   align-items: flex-end;
   margin-top: 40px;
   justify-content: left; }
-
-.encabezado__logo {
-  width: 16%;
-  margin-left: 1.5rem;
-  animation-duration: 5s;
-  animation-name: aparecer; }
 
 .encabezado__efectoMenu:hover {
   background-color: #C5A561; }
@@ -386,15 +695,6 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
   padding-left: 1.5rem;
   margin-top: 1rem; }
 
-.principal__textos {
-  font: normal 0.95rem "Alegreya Sans", sans-serif;
-  text-align: center;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  align-self: center; }
-
 .principal__subtitulos {
   color: #222222;
   text-align: center;
@@ -415,11 +715,6 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
   margin-top: 30px;
   font: normal 0.95rem "Alegreya Sans", sans-serif;
   justify-content: center; }
-
-.principal__aboutFoto {
-  width: 100%;
-  box-shadow: 3px 3px 5px 0px #222222;
-  margin-top: 1rem; }
 
 .principal__titulosConFondo {
   color: #C5A561;
@@ -460,10 +755,6 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
   width: 70%;
   margin-left: 1.1rem; }
 
-.destino__imagenSectionCiudad {
-  width: 70%;
-  margin-left: 1.8rem; }
-
 .destino__subtitulosDestinos {
   color: #C5A561;
   text-align: center;
@@ -487,39 +778,25 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
 .destinos__imagenesGalerias {
   width: 20%; }
 
-.borde__tarjetas {
-  border-radius: 3px;
-  border-width: 5px;
-  border-style: ridge;
-  border-color: #C5A561;
-  margin: 0.1rem; }
-
 .borde__formulario {
   border-radius: 5px;
   border-width: 8px;
   border-style: inset;
-  border-color: #C5A561;
-  margin: 0.1rem; }
+  border-color: #C5A561; }
 
 .borde__galeria {
   border-radius: 0px;
   border-width: 6px;
   border-style: groove;
-  border-color: #C5A561;
-  margin: 0.1rem; }
+  border-color: #C5A561; }
 
 .borde__fotoGaleria {
   border-radius: 2px;
   border-width: 3px;
   border-style: solid;
-  border-color: #C5A561;
-  margin: 0.1rem; }
+  border-color: #C5A561; }
 
 /*BEM Contactos*/
-.contacto__formFondo {
-  background-image: url(../imagenes/Floating_cards.png);
-  background-size: 70%; }
-
 .contacto__alineacion {
   display: flex;
   justify-content: center; }
@@ -544,6 +821,10 @@ main div h1 {
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 1.5rem; }
+
+main section#paginaPrincipal div.card a.btn:hover {
+  background-color: #C5A561;
+  border-color: #222222; }
 
 /*Atributos Nosotros*/
 main section div.principal__listaNosotros {
@@ -590,20 +871,17 @@ main section#grillaServicios div .circle-b:after {
   bottom: -70px;
   right: -70px; }
 
-/*Atributos Form*/
-form#miEstilo {
-  width: 70%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-family: 'Alegreya Sans', sans-serif;
-  padding-top: 0.2rem;
-  padding-right: 0.2rem;
-  padding-bottom: 0.2rem;
-  padding-left: 0.2rem;
-  background-color: #FFFFFF; }
+main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button {
+  cursor: pointer; }
+  main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button:hover {
+    background-color: #C5A561;
+    border-color: #222222; }
 
 /*Atributos Contacto*/
+main form#miEstilo div.col-12 button.btn:hover {
+  background-color: #C5A561;
+  border-color: #222222; }
+
 /*Animaciones*/
 #grad {
   background-image: linear-gradient(to bottom, #C5A561, #ebda6a); }
@@ -638,9 +916,6 @@ form#miEstilo {
   color: #C5A561;
   border-top: solid 4px #C5A561;
   font-family: 'Alegreya Sans', sans-serif; }
-
-.footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
-  padding: 10px 25px; }
 
 .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
   border-color: transparent; }

@@ -1,4 +1,140 @@
 
+@media (max-width: $breakpoint-celularAngosto){
+
+    main section#paginaPrincipal {
+        display: grid;
+        max-width: 100vw;
+        min-height: 100vh;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: ($caja-alto*2)-180 420px 420px;
+
+        grid-template-areas:
+            "parrafo"
+            "tarjeta1"
+            "tarjeta2";
+    }
+
+    #aumentoTitulo {
+        display: flex;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .encabezado__logo {
+        width: 36%;
+        margin-left: 0.5rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+    }
+
+    #estiloLista{
+        padding-right: 2rem;
+        padding-left: 3rem;
+    } 
+
+    .principal__aboutFoto{
+        width: 80%;
+        box-shadow: $sombra-cajas;
+        display: block;
+        margin: auto;
+    }
+
+    .principal__textos {
+        font: $fuente-textos;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        align-self: center;
+    }
+
+    .principal__videoFondo {	
+        background-image: url(../imagenes/textura.jpg);
+        background-size: cover;
+        width: 95vw;
+        height: 35vh;    
+        display: block;
+        margin: auto;
+    }
+    
+    .principal__videoDetalle {
+        width: 92vw;
+        height: 33vh;
+        position: relative;
+        display: block;
+        margin: auto;
+        padding-top: 1rem;
+        
+    }
+
+    main section#grillaServicios {
+        display: grid;
+        max-width: 100vw;
+        min-height: 100vh;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 19rem 19rem 19rem 19rem 19rem;
+        
+        grid-template-areas: 
+        "banner1" 
+        "banner2"
+        "banner3"
+        "banner4"
+        "banner5";
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .principal__responsiveBanner {
+        margin: 1rem auto;
+        max-width: 80%;
+        position: relative;
+        height: auto;
+        min-height: 190px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: $sombra-cajas;
+        background-image: linear-gradient(to bottom right, $color-oroClaro, $color-oro);
+    }
+
+    form#miEstilo {
+        width: 85%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font: $fuente-textos;
+        padding-top: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.2rem;
+        background-color: $color-blanco;
+    }
+
+    main section#grillaDestinos {
+        display: grid;
+        display: grid;
+        grid-template-areas: 
+        "descrip descrip descrip descrip descrip descrip descrip descrip descrip"
+        "prestacion1 prestacion1 prestacion1 prestacion2 prestacion2 prestacion2 prestacion3 prestacion3 prestacion3"
+        "definicion definicion definicion definicion definicion definicion definicion definicion definicion"
+        "galeria galeria galeria galeria galeria galeria galeria galeria galeria"
+        "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
+        
+        grid-template-rows: 19rem 14rem 11rem 5rem 9rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .borde__tarjetas {
+        @include bordes (3px, 5px, ridge);
+        margin: 0.2rem;
+    }
+}
+
+
 @media (min-width: $breakpoint-celular){
     main section#paginaPrincipal {
         display: grid;
@@ -6,12 +142,39 @@
         min-height: 100vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: $caja-alto 420px 420px;
+        grid-template-rows: $caja-alto 430px 430px;
 
         grid-template-areas:
             "parrafo parrafo"
             "tarjeta1 tarjeta1"
             "tarjeta2 tarjeta2";
+    }
+
+    main section.container-fluid div.row .align-items-center {
+        height: 300px;
+    }
+
+    .encabezado__logo {
+        width: 36%;
+        margin-left: 1.5rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+    }
+
+    .principal__aboutFoto{
+        width: 100%;
+        box-shadow: $sombra-cajas;
+        margin-top: 1rem;
+    }
+
+    .principal__textos {
+        font: $fuente-textos;
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-self: center;
     }
 
     .principal__videoFondo {	
@@ -47,6 +210,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    #aumentoTitulo {
+        font-size: 2.3rem;
+        text-align: center;
+    }
     
     .principal__responsiveBanner {
         margin: 1rem auto;
@@ -76,6 +244,30 @@
         justify-content: center;
         align-content: center;
     }
+
+    .borde__tarjetas {
+        @include bordes (3px, 5px, ridge);
+        margin: 0.4rem;
+    }
+
+    .contacto__formFondo {
+        background-image: url(../imagenes/Floating_cards.png);
+        background-size: 70%;
+    }
+
+    form#miEstilo {
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding-top: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.2rem;
+        background-color: $color-blanco;
+    }
+
 }
 
 @media (min-width: $breakpoint-tablet){
@@ -86,27 +278,54 @@
         min-height: 90vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: ($caja-alto)-70 420px;
+        grid-template-rows: ($caja-alto)-70 430px;
 
         grid-template-areas:
             "parrafo parrafo"
             "tarjeta1 tarjeta2";
     }
 
-        .principal__videoFondo {	
-            background-image: url(../imagenes/textura.jpg);
-            background-size: cover;
-            width: 80vw;
-            height: 50vh;    
-        }
+    .encabezado__logo {
+        width: 26%;
+        margin-left: 1.5rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+    }
+
+    .principal__textos {
+        font: $fuente-textos;
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-self: center;
+    }
     
-        .principal__videoDetalle {
-            width: 70vw;
-            height: 48vh;
-            position: relative;
-            padding-top: 1.2rem;
-            padding-left: 3rem;
-        }
+    main section.container-fluid div.row .align-items-center {
+        height: 400px;
+    }
+    
+    .principal__videoFondo {	
+        background-image: url(../imagenes/textura.jpg);
+        background-size: cover;
+        width: 80vw;
+        height: 50vh;    
+    }
+    
+    .principal__videoDetalle {
+        width: 70vw;
+        height: 48vh;
+        position: relative;
+        padding-top: 1.2rem;
+        padding-left: 3rem;
+    }
+
+    .principal__aboutFoto{
+        width: 100%;
+        box-shadow: $sombra-cajas;
+        margin-top: 1rem;
+    }
 
     main section#grillaServicios {
         display: grid;
@@ -125,6 +344,11 @@
     
         justify-content: center;
         align-items: center;
+    }
+
+    #aumentoTitulo {
+        font-size: 3rem;
+        text-align: center;
     }
 
     .principal__responsiveBanner {
@@ -149,10 +373,38 @@
         "galeria galeria galeria galeria galeria galeria galeria galeria galeria"
         "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
         
-        grid-template-rows: 12rem 24rem 8rem 5rem 13rem;
+        grid-template-rows: 12rem 24.5rem 8rem 5rem 13rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-content: center;
+    }
+
+    .destino__imagenSectionCiudad {
+        width: 70%;
+        margin-left: 2rem;
+    }
+
+    .borde__tarjetas {
+        @include bordes (3px, 5px, ridge);
+        margin: 0.4rem;
+    }
+
+    .contacto__formFondo {
+        background-image: url(../imagenes/Floating_cards.png);
+        background-size: 70%;
+    }
+
+    form#miEstilo {
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding-top: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.2rem;
+        background-color: $color-blanco;
     }
 
     body footer.footer-bs .footer-nav, body footer.footer-bs .footer-social, body footer.footer-bs .footer-ns { border-left:solid 1px rgba(255,255,255,0.10); }
@@ -166,7 +418,14 @@
         border-bottom-left-radius: 6px;
         border-top: solid 4px $color-oro;
         font-family: 'Alegreya Sans', sans-serif;
-    }    
+    }
+
+    .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+        padding-top: 10px;
+        padding-left:  15px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+    }
 }
 
 
@@ -178,27 +437,54 @@
         min-height: 90vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 230px 420px;
+        grid-template-rows: 230px 450px;
 
         grid-template-areas:
             "parrafo parrafo"
             "tarjeta1 tarjeta2";
     }
 
-        .principal__videoFondo {	
-            background-image: url(../imagenes/textura.jpg);
-            background-size: cover;
-            width: 80vw;
-            height: 60vh;    
-        }
+    .encabezado__logo {
+        width: 16%;
+        margin-left: 1.5rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+    }
+
+    .principal__aboutFoto{
+        width: 100%;
+        box-shadow: $sombra-cajas;
+        margin-top: 1rem;
+    }
+
+    .principal__textos {
+        font: $fuente-textos;
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-self: center;
+    }
+
+    main section.container-fluid div.row .align-items-center {
+        height: 500px;
+    }
+
+    .principal__videoFondo {	
+        background-image: url(../imagenes/textura.jpg);
+        background-size: cover;
+        width: 80vw;
+        height: 60vh;    
+    }
     
-        .principal__videoDetalle {
-            width: 70vw;
-            height: 58vh;
-            position: relative;
-            padding-top: 1.2rem;
-            padding-left: 4rem;
-        }
+    .principal__videoDetalle {
+        width: 70vw;
+        height: 58vh;
+        position: relative;
+        padding-top: 1.2rem;
+        padding-left: 4rem;
+    }
 
     main section#grillaServicios {
         display: grid;
@@ -245,10 +531,41 @@
         align-content: center;
     }
 
+    .destino__imagenSectionCiudad {
+        width: 70%;
+        margin-left: 2.7rem;
+    }
+
+    .borde__tarjetas {
+        @include bordes (3px, 5px, ridge);
+        margin: 0.8rem;
+    }
+
     main section#grillaDestinos div.d-none img.imagenSectionCiudad {
         width: 70%;
         margin-left: 2.7rem;
     }
+
+    .contacto__formFondo {
+        background-image: url(../imagenes/Floating_cards.png);
+        background-size: 70%;
+    }
+
+    form#miEstilo {
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding-top: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.2rem;
+        background-color: $color-blanco;
+    }
+
+    .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+        padding:10px 25px; }
 }
 
 
@@ -260,27 +577,54 @@
         min-height: 80vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 210px 420px;
+        grid-template-rows: 210px 450px;
 
         grid-template-areas:
             "parrafo parrafo"
             "tarjeta1 tarjeta2";
     }
 
-        .principal__videoFondo {	
-            background-image: url(../imagenes/textura.jpg);
-            background-size: cover;
-            width: 80vw;
-            height: 70vh;    
-        }
+    .encabezado__logo {
+        width: 16%;
+        margin-left: 1.5rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+    }
+
+    .principal__aboutFoto{
+        width: 100%;
+        box-shadow: $sombra-cajas;
+        margin-top: 1rem;
+    }
+
+    .principal__textos {
+        font: $fuente-textos;
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-self: center;
+    }
+
+    main section.container-fluid div.row .align-items-center {
+        height: 600px;
+    }
+
+    .principal__videoFondo {	
+        background-image: url(../imagenes/textura.jpg);
+        background-size: cover;
+        width: 80vw;
+        height: 70vh;    
+    }
     
-        .principal__videoDetalle {
-            width: 70vw;
-            height: 68vh;
-            position: relative;
-            padding-top: 1.2rem;
-            padding-left: 5rem;
-        }
+    .principal__videoDetalle {
+        width: 70vw;
+        height: 68vh;
+        position: relative;
+        padding-top: 1.2rem;
+        padding-left: 5rem;
+    }
 
     main section#grillaServicios {
         display: grid;
@@ -344,6 +688,37 @@
         width: 70%;
         margin-left: 3.1rem;
     }
+
+    .destino__imagenSectionCiudad {
+        width: 70%;
+        margin-left: 3.4rem;
+    }
+
+    .borde__tarjetas {
+        @include bordes (3px, 5px, ridge);
+        margin: 0.8rem;
+    }
+
+    .contacto__formFondo {
+        background-image: url(../imagenes/Floating_cards.png);
+        background-size: 70%;
+    }
+
+    form#miEstilo {
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding-top: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.2rem;
+        background-color: $color-blanco;
+    }
+
+    .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns {
+        padding:10px 25px; }
 }
 
 
@@ -355,27 +730,54 @@
         min-height: 80vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 210px 420px;
+        grid-template-rows: 210px 450px;
 
         grid-template-areas:
             "parrafo parrafo"
             "tarjeta1 tarjeta2";
     }
 
-        .principal__videoFondo {	
-            background-image: url(../imagenes/textura.jpg);
-            background-size: cover;
-            width: 80vw;
-            height: 70vh;    
-        }
+    .encabezado__logo {
+        width: 16%;
+        margin-left: 1.5rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+    }
+
+    .principal__textos {
+        font: $fuente-textos;
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-self: center;
+    }
+
+    main section.container-fluid div.row .align-items-center {
+        height: 600px;
+    }
+
+    .principal__videoFondo {	
+        background-image: url(../imagenes/textura.jpg);
+        background-size: cover;
+        width: 80vw;
+        height: 70vh;    
+    }
     
-        .principal__videoDetalle {
-            width: 70vw;
-            height: 68vh;
-            position: relative;
-            padding-top: 1.2rem;
-            padding-left: 7rem;
-        }
+    .principal__videoDetalle {
+        width: 70vw;
+        height: 68vh;
+        position: relative;
+        padding-top: 1.2rem;
+        padding-left: 7rem;
+    }
+
+    .principal__aboutFoto{
+        width: 90%;
+        box-shadow: $sombra-cajas;
+        margin-top: 1rem;
+    }
 
     main section#grillaServicios {
         display: grid;
@@ -426,6 +828,36 @@
         width: 70%;
         margin-left: 3.1rem;
     }
+
+    .destino__imagenSectionCiudad {
+        width: 70%;
+        margin-left: 4rem;
+    }
+
+    .borde__tarjetas {
+        @include bordes (3px, 5px, ridge);
+        margin: 0.8rem;
+    }
+
+    .contacto__formFondo {
+        background-image: url(../imagenes/Floating_cards.png);
+        background-size: 70%;
+    }
+
+    form#miEstilo {
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: 'Alegreya Sans', sans-serif;
+        padding-top: 0.2rem;
+        padding-right: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.2rem;
+        background-color: $color-blanco;
+    }
+
+    .footer-bs .footer-brand, .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { padding:10px 25px; }
 }
 
 
