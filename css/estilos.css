@@ -14,7 +14,7 @@
   padding-left: 0.4rem;
   margin: 1rem 1rem 2rem 1rem; }
 
-main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button, main form#miEstilo div.col-12 button.btn {
+main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button, main section#grillaServicios div.principal__responsiveBanner button.btn main form#miEstilo div.col-12 button.btn {
   box-shadow: 3px 3px 5px 0px #222222;
   background-color: #222222;
   border-color: #ebda6a;
@@ -738,6 +738,11 @@ section#contacto {
   position: relative;
   overflow: hidden; }
 
+.modal__textos {
+  font: normal 0.95rem "Alegreya Sans", sans-serif;
+  color: #222222;
+  text-align: left; }
+
 /*BEM Destinos*/
 .bariloche__claseHoteles {
   grid-area: prestacion1;
@@ -877,8 +882,7 @@ main section#grillaServicios div.principal__responsiveBanner div.principal__cont
     background-color: #C5A561;
     border-color: #222222; }
 
-/*Atributos Contacto*/
-main form#miEstilo div.col-12 button.btn:hover {
+main section#grillaServicios div.principal__responsiveBanner button.btn main form#miEstilo div.col-12 button.btn:hover {
   background-color: #C5A561;
   border-color: #222222; }
 
