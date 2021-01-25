@@ -100,7 +100,7 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
     display: grid;
     display: grid;
     grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion11 prestacion11 prestacion11 prestacion12 prestacion12 prestacion12 prestacion13 prestacion13 prestacion13" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
-    grid-template-rows: 14rem 11rem 9rem 5rem 22rem;
+    grid-template-rows: 16rem 11rem 9rem 5rem 22rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center; }
