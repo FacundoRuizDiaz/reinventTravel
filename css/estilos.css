@@ -99,8 +99,8 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
   main section#grillaDestinos {
     display: grid;
     display: grid;
-    grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion1 prestacion1 prestacion1 prestacion2 prestacion2 prestacion2 prestacion3 prestacion3 prestacion3" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
-    grid-template-rows: 19rem 14rem 11rem 5rem 9rem;
+    grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion11 prestacion11 prestacion11 prestacion12 prestacion12 prestacion12 prestacion13 prestacion13 prestacion13" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
+    grid-template-rows: 14rem 11rem 9rem 5rem 22rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center; }
@@ -109,7 +109,14 @@ main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.pr
     border-width: 5px;
     border-style: ridge;
     border-color: #C5A561;
-    margin: 0.2rem; } }
+    margin: 0.2rem; }
+  main section div.destinos__galeriaFotos {
+    display: none; }
+  /*
+    .destinos__galeriaOculta {
+        display: none;
+    }
+    */ }
 
 @media (min-width: 576px) {
   main section#paginaPrincipal {
@@ -653,6 +660,22 @@ main section div.banner5 {
 section#contacto {
   grid-area: contacto;
   justify-self: center; }
+
+#destinosCelularAngosto1 {
+  grid-area: prestacion11; }
+
+#destinosCelularAngosto2 {
+  grid-area: prestacion12; }
+
+#destinosCelularAngosto3 {
+  grid-area: prestacion13; }
+
+.destinos__carrousel {
+  grid-area: fotogal;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 /*BEM Home*/
 .encabezado__estilo {
