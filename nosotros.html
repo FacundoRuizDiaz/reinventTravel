@@ -28,7 +28,7 @@
 
 <body><!--Aca comienza el body-->
 
-    <header class="encabezado__estilo">
+    <header class="encabezado__estilo"><!--Aca empieza el header-->
 
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -71,65 +71,57 @@
 
     </header><!--Aca termina el header-->
 
-    <main><!-- Aca comienza lo principal-->
+    <main><!-- Aca comienza el principal-->
 			
-			<div>
+			<div class="principal__centrado">
         <img src="imagenes/nosotros/aboutUs.gif" class="img-fluid principal__imagenGrande" alt="Creation of our logo">
       </div>
       
-      <div>
+      <div class="principal__textosLargos">
         <p class="principal__textos">We are dreamers! We are convinced the impossible can be turned into reality. Our aim is to achieve travel experiences. We  can access to the most reserved secrets of our country for our clients to get an “insiders” approach to our culture. In our planning we love to interact with artists, artisans, musicians, actors, cooks, dancers and all those individuals who can give a different perspective to the ordinary. That is our secret… to keep our minds active and inspired to offer unique programs.</p>
         <p class="principal__textos">We like to think of ourselves as interpreters who will  process  your ideas and put them in motion, supplying international-standard production conditions. We have acquired considerable knowledge and professional know-how in the design, development and management of a wide variety of VIP Events.</p>
       </div>
 
       <section class="d-none d-sm-block container-fluid">
-          <div class="row">
-            <div class="principal__listaNosotros">
-              <ul>
-                <li>Incentives</li>
-                <li>Events</li>
-                <li>Luxury Trips</li>
-              </ul>
-            </div>
-            <div class="principal__listaNosotros">
-              <ul id="estiloLista">
-                <li id="estiloLista">Tailor Made</li>
-                <li id="estilosLista">Tour & Travel</li>
-              </ul>
-            </div> 
-          <div class="row align-items-center">
-              <div class="col-5">
-                <img src="imagenes/nosotros/AboutUsAlbano.jpg" class="principal__aboutFoto" alt="Mr Garibaldi"> 
-              </div>
-              <div class="col-7">
-                <h2 class="principal__subtitulos">Albano Garibaldi</h2>
-                <p class="principal__textos">My long history and knowledge in the MICE industry, has allowed me to develop myself with commitment, effort and dedication in this exciting profession that I have chosen since I was young. I take each project I face as a new challenge that I focus entirely on, with passion, creativity and responsibility. Having as a single goal being able to see in each client that desired smile and the feeling of having achieved successful results.</p>
-              </div>
+        <div class="row">
+          <div class="principal__listaNosotros">
+            <ul>
+              <li>Incentives</li>
+              <li>Events</li>
+              <li>Luxury Trips</li>
+            </ul>
           </div>
-          <div class="row align-items-center">
-            <div class="col-7">
-              <h2 class="principal__subtitulos">Facundo Ruiz Diaz</h2>
-              <p class="principal__textos">I started to get involved in tourism at the age of 15, working with my father. This experience not only convinced me to study that career but also completely fell in love. In my years in tourism I have worked in several companies. My personal growth through my work experience, my born creativity, great passion and dedication to the maximum, made me start this personal project.</p>
-            </div>
+          <div class="principal__listaNosotros">
+            <ul id="estiloLista">
+              <li id="estiloLista">Tailor Made</li>
+              <li id="estilosLista">Tour & Travel</li>
+            </ul>
+          </div> 
+        <div class="row align-items-center">
             <div class="col-5">
-              <img src="imagenes/nosotros/AboutUsFacundo.jpg"class="principal__aboutFoto" alt="Mr Ruiz Diaz">
+              <img src="imagenes/nosotros/AboutUsAlbano.jpg" class="principal__aboutFoto" alt="Mr Garibaldi"> 
             </div>
+            <div class="col-7">
+              <h2 class="principal__subtitulos">Albano Garibaldi</h2>
+              <p class="principal__textos">My long history and knowledge in the MICE industry, has allowed me to develop myself with commitment, effort and dedication in this exciting profession that I have chosen since I was young. I take each project I face as a new challenge that I focus entirely on, with passion, creativity and responsibility. Having as a single goal being able to see in each client that desired smile and the feeling of having achieved successful results.</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-7">
+            <h2 class="principal__subtitulos">Facundo Ruiz Diaz</h2>
+            <p class="principal__textos">I started to get involved in tourism at the age of 15, working with my father. This experience not only convinced me to study that career but also completely fell in love. In my years in tourism I have worked in several companies. My personal growth through my work experience, my born creativity, great passion and dedication to the maximum, made me start this personal project.</p>
           </div>
+          <div class="col-5">
+            <img src="imagenes/nosotros/AboutUsFacundo.jpg"class="principal__aboutFoto" alt="Mr Ruiz Diaz">
+          </div>
+        </div>
           <div>
             <div class="tituloVideo">
               <h2 class="principal__titulosConFondo">Discover More About Us</h2>
             </div>
           </div>
-          <div class="container-fluid">
-            <div class="row justify-content-center">
-              <div class="col-8 principal__videoFondo">
-                <div class="row justify-content-center">
-                  <div class="col-10.5 justify-content-center">
-                    <iframe src="https://www.youtube.com/embed/CxWUYJbpmUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" class="principal__videoDetalle"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="video-responsive">
+              <iframe src="https://www.youtube.com/embed/CxWUYJbpmUk" frameborder="0" allowfullscreen></iframe>
           </div>
       </section>
 
@@ -175,18 +167,10 @@
             <h2 class="principal__titulosConFondo">Discover More About Us</h2>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="justify-content-center">
-            <div class="principal__videoFondo">
-              <div class="justify-content-center">
-                <div class="justify-content-center">
-                  <iframe src="https://www.youtube.com/embed/CxWUYJbpmUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0" class="principal__videoDetalle"></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/CxWUYJbpmUk" frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
+      </section>
 
 
     </main><!--Aca termina lo principal-->
@@ -252,7 +236,7 @@
     <!--Aca termina el footer-->
 
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     
@@ -263,6 +247,6 @@
 		</script>
 
 
-</body>
+</body><!--Aca termina el body-->
 
 </html>

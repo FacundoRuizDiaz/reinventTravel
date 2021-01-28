@@ -7,12 +7,13 @@
         min-height: 100vh;
 
         grid-template-columns: 1fr;
-        grid-template-rows: ($caja-alto*2)-180 420px 420px;
+        grid-template-rows: ($caja-alto*2)-80 ($caja-alto*2)-150 ($caja-alto*2)-150 ($caja-alto*2)-150;
 
         grid-template-areas:
             "parrafo"
             "tarjeta1"
-            "tarjeta2";
+            "tarjeta2"
+            "tarjeta3";
     }
 
     #aumentoTitulo {
@@ -48,25 +49,6 @@
         margin-left: 1rem;
         margin-right: 1rem;
         align-self: center;
-    }
-
-    .principal__videoFondo {	
-        background-image: url(../imagenes/textura.jpg);
-        background-size: cover;
-        width: 95vw;
-        height: 35vh;    
-        display: block;
-        margin: auto;
-    }
-    
-    .principal__videoDetalle {
-        width: 92vw;
-        height: 33vh;
-        position: relative;
-        display: block;
-        margin: auto;
-        padding-top: 1rem;
-        
     }
 
     main section#grillaServicios {
@@ -136,12 +118,6 @@
     main section div.destinos__galeriaFotos {
         display: none;
     }
-
-    /*
-    .destinos__galeriaOculta {
-        display: none;
-    }
-    */
 }
 
 
@@ -151,13 +127,14 @@
         max-width: 100vw;
         min-height: 100vh;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: $caja-alto 430px 430px;
+        grid-template-columns: 1fr;
+        grid-template-rows: ($caja-alto)+20 ($caja-alto*2)-90 ($caja-alto*2)-90 ($caja-alto*2)-90;
 
         grid-template-areas:
-            "parrafo parrafo"
-            "tarjeta1 tarjeta1"
-            "tarjeta2 tarjeta2";
+            "parrafo"
+            "tarjeta1"
+            "tarjeta2"
+            "tarjeta3";
     }
 
     main section.container-fluid div.row .align-items-center {
@@ -185,21 +162,6 @@
         margin-left: 2rem;
         margin-right: 2rem;
         align-self: center;
-    }
-
-    .principal__videoFondo {	
-        background-image: url(../imagenes/textura.jpg);
-        background-size: cover;
-        width: 80vw;
-        height: 35vh;    
-    }
-    
-    .principal__videoDetalle {
-        width: 70vw;
-        height: 33vh;
-        position: relative;
-        padding-top: 1.2rem;
-        padding-left: 1.6rem;
     }
 
     main section#grillaServicios {
@@ -261,7 +223,7 @@
     }
 
     .contacto__formFondo {
-        background-image: url(../imagenes/Floating_cards.png);
+        background-image: url(../imagenes/contacto/Floating_cards.png);
         background-size: 70%;
     }
 
@@ -288,11 +250,12 @@
         min-height: 90vh;
 
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: ($caja-alto)-70 430px;
+        grid-template-rows: ($caja-alto)-40 ($caja-alto)+120 ($caja-alto)+120;
 
         grid-template-areas:
             "parrafo parrafo"
-            "tarjeta1 tarjeta2";
+            "tarjeta1 tarjeta2"
+            "tarjeta3 tarjeta3";
     }
 
     .encabezado__logo {
@@ -316,21 +279,6 @@
         height: 400px;
     }
     
-    .principal__videoFondo {	
-        background-image: url(../imagenes/textura.jpg);
-        background-size: cover;
-        width: 80vw;
-        height: 50vh;    
-    }
-    
-    .principal__videoDetalle {
-        width: 70vw;
-        height: 48vh;
-        position: relative;
-        padding-top: 1.2rem;
-        padding-left: 3rem;
-    }
-
     .principal__aboutFoto{
         width: 100%;
         box-shadow: $sombra-cajas;
@@ -400,7 +348,7 @@
     }
 
     .contacto__formFondo {
-        background-image: url(../imagenes/Floating_cards.png);
+        background-image: url(../imagenes/contacto/Floating_cards.png);
         background-size: 70%;
     }
 
@@ -446,12 +394,12 @@
         max-width: 100vw;
         min-height: 90vh;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 230px 450px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: ($caja-alto)-70 ($caja-alto)+120;
 
         grid-template-areas:
-            "parrafo parrafo"
-            "tarjeta1 tarjeta2";
+            "parrafo parrafo parrafo"
+            "tarjeta1 tarjeta2 tarjeta3";
     }
 
     .encabezado__logo {
@@ -479,21 +427,6 @@
 
     main section.container-fluid div.row .align-items-center {
         height: 500px;
-    }
-
-    .principal__videoFondo {	
-        background-image: url(../imagenes/textura.jpg);
-        background-size: cover;
-        width: 80vw;
-        height: 60vh;    
-    }
-    
-    .principal__videoDetalle {
-        width: 70vw;
-        height: 58vh;
-        position: relative;
-        padding-top: 1.2rem;
-        padding-left: 4rem;
     }
 
     main section#grillaServicios {
@@ -557,7 +490,7 @@
     }
 
     .contacto__formFondo {
-        background-image: url(../imagenes/Floating_cards.png);
+        background-image: url(../imagenes/contacto/Floating_cards.png);
         background-size: 70%;
     }
 
@@ -586,12 +519,12 @@
         max-width: 100vw;
         min-height: 80vh;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 210px 450px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: ($caja-alto)-90 ($caja-alto)+150;
 
         grid-template-areas:
-            "parrafo parrafo"
-            "tarjeta1 tarjeta2";
+            "parrafo parrafo parrafo"
+            "tarjeta1 tarjeta2 tarjeta3";
     }
 
     .encabezado__logo {
@@ -619,21 +552,6 @@
 
     main section.container-fluid div.row .align-items-center {
         height: 600px;
-    }
-
-    .principal__videoFondo {	
-        background-image: url(../imagenes/textura.jpg);
-        background-size: cover;
-        width: 80vw;
-        height: 70vh;    
-    }
-    
-    .principal__videoDetalle {
-        width: 70vw;
-        height: 68vh;
-        position: relative;
-        padding-top: 1.2rem;
-        padding-left: 5rem;
     }
 
     main section#grillaServicios {
@@ -710,7 +628,7 @@
     }
 
     .contacto__formFondo {
-        background-image: url(../imagenes/Floating_cards.png);
+        background-image: url(../imagenes/contacto/Floating_cards.png);
         background-size: 70%;
     }
 
@@ -739,12 +657,12 @@
         max-width: 100vw;
         min-height: 80vh;
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 210px 450px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: ($caja-alto)-90 ($caja-alto)+150;
 
         grid-template-areas:
-            "parrafo parrafo"
-            "tarjeta1 tarjeta2";
+            "parrafo parrafo parrafo"
+            "tarjeta1 tarjeta2 tarjeta3";
     }
 
     .encabezado__logo {
@@ -765,22 +683,7 @@
     }
 
     main section.container-fluid div.row .align-items-center {
-        height: 600px;
-    }
-
-    .principal__videoFondo {	
-        background-image: url(../imagenes/textura.jpg);
-        background-size: cover;
-        width: 80vw;
-        height: 70vh;    
-    }
-    
-    .principal__videoDetalle {
-        width: 70vw;
-        height: 68vh;
-        position: relative;
-        padding-top: 1.2rem;
-        padding-left: 7rem;
+        height: auto;
     }
 
     .principal__aboutFoto{
@@ -850,7 +753,7 @@
     }
 
     .contacto__formFondo {
-        background-image: url(../imagenes/Floating_cards.png);
+        background-image: url(../imagenes/contacto/Floating_cards.png);
         background-size: 70%;
     }
 
@@ -873,6 +776,8 @@
 
 .parrafo {
     grid-area: parrafo;
+    width: 75%;
+    margin: auto;
 }
 
 .parrafo1 {
@@ -880,18 +785,31 @@
     display: flex;
 }
 
-.tarjeta1 {
+.principal__tarjeta1 {
     grid-area: tarjeta1;
+    max-width: 75%;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    box-shadow: $sombra-cajas;
 }
 
-.tarjeta2 {
+.principal__tarjeta2 {
     grid-area: tarjeta2;
+    max-width: 75%;
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
+    box-shadow: $sombra-cajas;
+}
+
+.principal__tarjeta3 {
+    grid-area: tarjeta3;
+    max-width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: $sombra-cajas;
 }
 
 main section div.banner1 {

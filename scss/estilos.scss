@@ -65,7 +65,7 @@ main {
         div.principal__listaNosotros {
             display: flex;
                 ul {
-                    list-style-image: url(../imagenes/IconoDeluxeChico.png);
+                    list-style-image: url(../imagenes/nosotros/IconoDeluxeChico.png);
                     list-style-position: inside;
                     display: flex;
                     justify-content: center;
@@ -131,7 +131,7 @@ main section#grillaServicios div.principal__responsiveBanner button.btn
 
 /*Atributos Contacto*/
 
-main form#miEstilo div.col-12 button.btn {
+main div.contacto__formFondo form#miEstilo div.col-12 button {
     @extend %estiloBotones;
     &:hover{
         background-color: $color-oro;
@@ -188,14 +188,14 @@ main form#miEstilo div.col-12 button.btn {
 
 .footer-bs .footer-nav, .footer-bs .footer-social, .footer-bs .footer-ns { border-color: transparent; }
 .footer-bs .footer-brand h2 { margin:0px 0px 10px; }
-.footer-bs .footer-brand p { font-size:12px; color:rgba(255,255,255,0.70); }
+.footer-bs .footer-brand p { font-size:16px; color:rgba(255,255,255,0.70); }
 
 .footer-bs .footer-nav ul.pages { list-style:none; padding:0px; width: 90px;}
 .footer-bs .footer-nav ul.pages li { padding:5px 0px;}
 .footer-bs .footer-nav ul.pages a { color:rgba(255,255,255,1.00); font-weight:bold; text-transform:uppercase; }
 .footer-bs .footer-nav ul.pages a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
 .footer-bs .footer-nav h4 {
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	margin-bottom:10px;
@@ -208,7 +208,7 @@ main form#miEstilo div.col-12 button.btn {
 
 .footer-bs .footer-social ul { list-style:none; padding:0px; }
 .footer-bs .footer-social h4 {
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 }
@@ -217,12 +217,12 @@ main form#miEstilo div.col-12 button.btn {
 .footer-bs .footer-social a:hover { color:rgba(255,255,255,0.80); text-decoration:none; }
 
 .footer-bs .footer-ns h4 {
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	margin-bottom:10px;
 }
-.footer-bs .footer-ns p { font-size:12px; color:rgba(255,255,255,0.70); }
+.footer-bs .footer-ns p { font-size:16px; color:rgba(255,255,255,0.70); }
 
 
 /*Atributos 404*/
