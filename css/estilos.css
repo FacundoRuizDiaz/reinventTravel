@@ -14,7 +14,7 @@
   padding-left: 0.4rem;
   margin: 1rem 1rem 2rem 1rem; }
 
-.contacto__boton, main section#paginaPrincipal div.card a.btn, main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button, main section#grillaServicios div.principal__responsiveBanner button.btn main div.contacto__formFondo form#miEstilo div.col-12 button {
+.contacto__boton, main section#paginaPrincipal div.card a.btn {
   box-shadow: 3px 3px 5px 0px #222222;
   background-color: #222222;
   border-color: #ebda6a;
@@ -38,8 +38,8 @@
     animation-duration: 5s;
     animation-name: aparecer; }
   #estiloLista {
-    padding-right: 2rem;
-    padding-left: 3rem; }
+    padding-right: 1rem;
+    padding-left: 1rem; }
   .principal__aboutFoto {
     width: 80%;
     box-shadow: 3px 3px 5px 0px #222222;
@@ -84,12 +84,14 @@
     background-color: #FFFFFF; }
   main section#grillaDestinos {
     display: grid;
-    display: grid;
     grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion11 prestacion11 prestacion11 prestacion12 prestacion12 prestacion12 prestacion13 prestacion13 prestacion13" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
-    grid-template-rows: 16rem 11rem 9rem 5rem 22rem;
+    grid-template-rows: 20rem 8rem 9rem 5rem 16rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center; }
+  #destinos__anchoTexto {
+    width: 90%;
+    margin: auto; }
   .borde__tarjetas {
     border-radius: 3px;
     border-width: 5px;
@@ -108,7 +110,7 @@
     grid-template-rows: 320px 510px 510px 510px;
     grid-template-areas: "parrafo" "tarjeta1" "tarjeta2" "tarjeta3"; }
   main section.container-fluid div.row .align-items-center {
-    height: 300px; }
+    height: auto; }
   .encabezado__logo {
     width: 36%;
     margin-left: 1.5rem;
@@ -151,9 +153,8 @@
     background-image: linear-gradient(to bottom right, #ebda6a, #C5A561); }
   main section#grillaDestinos {
     display: grid;
-    display: grid;
     grid-template-areas: "descrip descrip descrip descrip descrip descrip descrip descrip descrip" "prestacion1 prestacion1 prestacion1 prestacion2 prestacion2 prestacion2 prestacion3 prestacion3 prestacion3" "definicion definicion definicion definicion definicion definicion definicion definicion definicion" "galeria galeria galeria galeria galeria galeria galeria galeria galeria" "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
-    grid-template-rows: 14rem 11rem 11rem 5rem 10rem;
+    grid-template-rows: 16rem 11rem 11rem 5rem 10rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-content: center; }
@@ -186,6 +187,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 260px 420px 420px;
     grid-template-areas: "parrafo parrafo" "tarjeta1 tarjeta2" "tarjeta3 tarjeta3"; }
+  #principal__centradoTarjeta3 {
+    grid-area: tarjeta3;
+    display: flex;
+    flex-wrap: wrap; }
+  #principal__tamanioTarjeta3 {
+    max-width: 40%; }
   .encabezado__logo {
     width: 26%;
     margin-left: 1.5rem;
@@ -200,7 +207,7 @@
     margin-right: 2rem;
     align-self: center; }
   main section.container-fluid div.row .align-items-center {
-    height: 400px; }
+    height: auto; }
   .principal__aboutFoto {
     width: 100%;
     box-shadow: 3px 3px 5px 0px #222222;
@@ -301,7 +308,7 @@
     margin-right: 2rem;
     align-self: center; }
   main section.container-fluid div.row .align-items-center {
-    height: 500px; }
+    height: auto; }
   main section#grillaServicios {
     display: grid;
     max-width: 100vw;
@@ -384,7 +391,7 @@
     margin-right: 2rem;
     align-self: center; }
   main section.container-fluid div.row .align-items-center {
-    height: 600px; }
+    height: auto; }
   main section#grillaServicios {
     display: grid;
     max-width: 100vw;
@@ -795,9 +802,11 @@ section#contacto {
   display: flex;
   justify-content: center; }
 
-.contacto__boton:hover {
-  background-color: #C5A561;
-  border-color: #222222; }
+.contacto__boton {
+  cursor: pointer; }
+  .contacto__boton:hover {
+    background-color: #C5A561;
+    border-color: #222222; }
 
 /*SCSS*/
 /*Atributos Home*/
@@ -868,16 +877,6 @@ main section#grillaServicios div .circle-b:after {
   height: 150px;
   bottom: -70px;
   right: -70px; }
-
-main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button {
-  cursor: pointer; }
-  main section#grillaServicios div.principal__responsiveBanner div.principal__contenidoSobre button:hover {
-    background-color: #C5A561;
-    border-color: #222222; }
-
-main section#grillaServicios div.principal__responsiveBanner button.btn main div.contacto__formFondo form#miEstilo div.col-12 button:hover {
-  background-color: #C5A561;
-  border-color: #222222; }
 
 /*Animaciones*/
 #grad {
@@ -990,72 +989,3 @@ main section#grillaServicios div.principal__responsiveBanner button.btn main div
 .footer-bs .footer-ns p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7); }
-
-/*Atributos 404*/
-#notfound {
-  position: relative;
-  height: 100vh;
-  background-color: #222; }
-
-body div#notfound div.notfound {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.notfound {
-  max-width: 460px;
-  width: 100%;
-  text-align: center;
-  line-height: 1.4; }
-
-.notfound .notfound-404 {
-  height: 250px;
-  line-height: 153px; }
-
-.notfound .notfound-404 h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #222;
-  font-size: 220px;
-  letter-spacing: 10px;
-  margin: 0px;
-  font-weight: 700;
-  text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9; }
-
-.notfound .notfound-404 h1 > span {
-  text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700; }
-
-.notfound p {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #c9c9c9;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 0px;
-  margin-bottom: 15px; }
-
-.notfound a {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background: transparent;
-  color: #c9c9c9;
-  border: 2px solid #c9c9c9;
-  display: inline-block;
-  padding: 10px 25px;
-  font-weight: 700;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all; }
-
-.notfound a:hover {
-  color: #ffab00;
-  border-color: #ffab00; }
-
-@media only screen and (max-width: 480px) {
-  .notfound .notfound-404 {
-    height: 122px;
-    line-height: 122px; }
-  .notfound .notfound-404 h1 {
-    font-size: 122px; } }

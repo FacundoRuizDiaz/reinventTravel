@@ -30,9 +30,9 @@
     }
 
     #estiloLista{
-        padding-right: 2rem;
-        padding-left: 3rem;
-    } 
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
     .principal__aboutFoto{
         width: 80%;
@@ -96,7 +96,6 @@
 
     main section#grillaDestinos {
         display: grid;
-        display: grid;
         grid-template-areas: 
         "descrip descrip descrip descrip descrip descrip descrip descrip descrip"
         "prestacion11 prestacion11 prestacion11 prestacion12 prestacion12 prestacion12 prestacion13 prestacion13 prestacion13"
@@ -104,10 +103,15 @@
         "galeria galeria galeria galeria galeria galeria galeria galeria galeria"
         "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
         
-        grid-template-rows: 16rem 11rem 9rem 5rem 22rem;
+        grid-template-rows: 20rem 8rem 9rem 5rem 16rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-content: center;
+    }
+
+    #destinos__anchoTexto{
+        width: 90%;
+        margin: auto;
     }
 
     .borde__tarjetas {
@@ -138,7 +142,7 @@
     }
 
     main section.container-fluid div.row .align-items-center {
-        height: 300px;
+        height: auto;
     }
 
     .encabezado__logo {
@@ -203,7 +207,6 @@
 
     main section#grillaDestinos {
         display: grid;
-        display: grid;
         grid-template-areas: 
         "descrip descrip descrip descrip descrip descrip descrip descrip descrip"
         "prestacion1 prestacion1 prestacion1 prestacion2 prestacion2 prestacion2 prestacion3 prestacion3 prestacion3"
@@ -211,7 +214,7 @@
         "galeria galeria galeria galeria galeria galeria galeria galeria galeria"
         "fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal fotogal";
         
-        grid-template-rows: 14rem 11rem 11rem 5rem 10rem;
+        grid-template-rows: 16rem 11rem 11rem 5rem 10rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-content: center;
@@ -258,6 +261,16 @@
             "tarjeta3 tarjeta3";
     }
 
+    #principal__centradoTarjeta3{
+        grid-area: tarjeta3;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #principal__tamanioTarjeta3{
+        max-width: 40%;
+    }
+
     .encabezado__logo {
         width: 26%;
         margin-left: 1.5rem;
@@ -276,7 +289,7 @@
     }
     
     main section.container-fluid div.row .align-items-center {
-        height: 400px;
+        height: auto;
     }
     
     .principal__aboutFoto{
@@ -426,7 +439,7 @@
     }
 
     main section.container-fluid div.row .align-items-center {
-        height: 500px;
+        height: auto;
     }
 
     main section#grillaServicios {
@@ -551,7 +564,7 @@
     }
 
     main section.container-fluid div.row .align-items-center {
-        height: 600px;
+        height: auto;
     }
 
     main section#grillaServicios {
